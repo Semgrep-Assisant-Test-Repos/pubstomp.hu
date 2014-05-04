@@ -9,3 +9,7 @@ class Config(object):
 
     DEBUG = False
     TESTING = False
+
+    # Google Analytics
+    GA_TRACKING_ID = ''
+    GA_DEFAULT_URL = ''
