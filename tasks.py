@@ -9,14 +9,14 @@ from slimit import minify as js_minify
 def build():
     for filename in os.listdir('app/assets/css'):
         if filename.endswith('.sass') and not filename.startswith('_'):
-            sass_file_path = os.path.join('duchess/assets/css/', filename)
+            sass_file_path = os.path.join('app/assets/css/', filename)
             css_file_path = sass_file_path + '.css'
 
             run('isass %s --output %s' % (sass_file_path, css_file_path))
 
     for filename in os.listdir('app/assets/css'):
         if filename.endswith('.sass.css'):
-            css_file_path = os.path.join('duchess/assets/css/', filename)
+            css_file_path = os.path.join('app/assets/css/', filename)
             min_css_file_path = css_file_path.replace('.sass.css', '.min.css')
             with open(css_file_path) as css_file:
                 with open(min_css_file_path, 'w') as min_css_file:
