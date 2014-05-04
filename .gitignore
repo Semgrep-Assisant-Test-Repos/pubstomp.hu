@@ -52,3 +52,10 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# Flask
+config.py
+
+# Virtualenv (on windose HAHEHHHHAHHA)
+Include/
+Lib/
+Scripts/
