@@ -9,7 +9,7 @@
     {% block style %}
         {% if config['DEBUG'] %}
             {# Non-minified for DEBUG environment #}
-            <link rel='stylesheet' href='{{ url_for('static', filename='css/base.sass.css') }}'>
+            <link rel='stylesheet' href='{{ url_for('static', filename='css/base.css') }}'>
         {% else %}
             {# Minified for production environment #}
             <link rel='stylesheet' href='{{ url_for('static', filename='css/base.min.css') }}'>
