@@ -1,0 +1,19 @@
+// Variables
+$footer_height: 3em
+
+// Beefy man-code
+
+html,
+body
+  height: 100%
+
+div.page-wrap
+  min-height: 100%
+  margin-bottom: -$footer_height
+
+  &:after
+    content: ""
+    display: block
+
+footer
+  height: $footer_height

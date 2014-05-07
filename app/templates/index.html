@@ -1,5 +1,40 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <p>TOP WORDS!</p>
+    <div class="container">
+        <div class="grid">
+            <section class="col-1-2">
+                <h2>Venue, price, dates</h2>
+            </section>
+            <section class="col-1-2">
+                <h2>Map, travel info</h2>
+            </section>
+        </div>
+
+        <div class="grid">
+            <section class="col-1-2">
+                <h2>What is a pubstomp?</h2>
+            </section>
+
+            <section class="col-1-2">
+                <h2>What is TI?</h2>
+            </section>
+        </div>
+
+        <div class="grid">
+            <section class="col-1-2">
+                <h2>Newsletter signup</h2>
+                <p>Would you like to be alerted about future events?</p>
+            </section>
+
+            <section class="col-1-2">
+                <h2>Attendance poll</h2>
+                <ul>
+                    <li>Yes, absolutely, not even kidding.</li>
+                    <li>Maybe, kinks to work out</li>
+                    <li>No, go away.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
 {% endblock %}

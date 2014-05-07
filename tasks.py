@@ -21,7 +21,6 @@ def build():
             with open(css_file_path) as css_file:
                 with open(min_css_file_path, 'w') as min_css_file:
                     min_css_file.write(css_minify(css_file.read()))
-            os.remove(css_file_path)
 
     for filename in os.listdir('app/assets/js'):
         if filename.endswith('.js') and '.min.js' not in filename:
