@@ -1,12 +1,13 @@
-@import app/assets/css/_reset.sass
-@import app/assets/css/_sticky_footer.sass
-@import app/assets/css/_grid.sass
-
+@import "../../../bower_components/bourbon/dist/_bourbon.scss"
+@import _reset.sass
+@import _sticky_footer.sass
+@import _grid.sass
 
 // ----------------------------------------------------------------------------
 
 
 $font_family: 'Droid Serif', serif
+$font_size: 14px
 
 $text_color: #ddd
 
@@ -43,7 +44,16 @@ body
   background-color: $background_color
   color: $text_color
   font-family: $font_family
+  font-size: golden-ratio($font_size, 0)
 
+h1
+  font-size: golden-ratio($font_size, 3)
+
+h2
+  font-size: golden-ratio($font_size, 2)
+
+h3
+  font-size: golden-ratio($font_size, 1)
 
 .container
   margin: 0 auto
@@ -84,5 +94,5 @@ footer
     padding: 1em 0
 
     ul li
-        display: inline
-        list-style: none
+      display: inline
+      list-style: none
