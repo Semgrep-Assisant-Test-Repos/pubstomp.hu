@@ -1,45 +1,104 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+    <div class="banner">
+        <div class="container">
+            <h1>The International 2014</h1>
+            <h2>
+                <span class="date">July 18 &ndash; 21</span>,
+                <span class="location">Bence's house</span>
+            </h2>
+        </div>
+    </div>
     <div class="container">
         <div class="grid">
             <section class="col-1-2">
-                <h2>Venue, price, dates</h2>
+                <h3>What is a pubstomp?</h3>
+                <p>
+                    A pubstomp is simply a gathering of Dota fans in pubs or bars to watch the hottest e-sports happenings
+                    throughout the year.  The phenomonon stems from the Starcraft scene in early 2011 (where it's called
+                    "Barcraft"), and is only becomming more common as more games enter the e-sports scene, and more
+                    prestigious events are held.
+                </p>
+
+                <h3>Why should I go to a pubstomp?</h3>
+                <p>
+                    Pubstomps are a substitute for being at the live event - you get a sense of atmosphere and community
+                    that you don't get just watching the games at home.  You also get to socialize and meet others local
+                    to you with similar interests, and that's never a bad thing.
+                </p>
+                <p>
+                    If you need further incentive &ndash; it's not uncommon for companies and organizations associated to
+                    the game being watched to offer up swag and prizes to pubstomp attendees.  We can't offer any guarantees
+                    that this will happen at our event, but we are certainly looking at how we can further incentivize people
+                    to attend.
+                </p>
+
+                <h3>What is The International?</h3>
+                <p>
+                    The International is Dota 2's annual championship tournament, inviting top teams from around the world
+                    to compete for one of the largest prize pools in E-sports history.  The tournament is hosted by Valve
+                    Corporation &ndash; the developer's of Dota 2, without any external sponsors, and is often regarded
+                    as one of the most innovative e-sports events &ndash; finding new ways to support the e-sports industry
+                    year after year.
+                </p>
+
             </section>
             <section class="col-1-2">
+                <h3>Attend</h3>
+                <p>
+                    Pubstomp.hu's The International 2014 event will be held at LOCATION<!--TODO-->. Anybody is welcome to
+                    attend, and attendance is (?:free|COSTS_DOLLARS<!--TODO-->). Food and drink will be available at the event.
+                </p>
+
+                <p>Any other facilities?</p>
+
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10781.938617732896!2d19.04086638073983!3d47.499951947536175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c334d1d4cfc9%3A0x400c4290c1e1160!2sBudapest!5e0!3m2!1sen!2s!4v1399466870641"
                     width="100%"
                     height="350px"
                     frameborder="0"
                     style="border:0"></iframe>
-            </section>
-        </div>
 
-        <div class="grid">
-            <section class="col-1-2">
-                <h2>What is a pubstomp?</h2>
-            </section>
-
-            <section class="col-1-2">
-                <h2>What is TI?</h2>
+                <h3>Travelling in?</h3>
+                <p>Bus routes? Train route? Taxi cost from inner-city, suburbs, airport?</p>
             </section>
         </div>
 
         <div class="grid">
             <section class="col-1-2">
                 <h2>Newsletter signup</h2>
-                <p>Would you like to be alerted about future events?</p>
+                <p>We hope to run many more pubstomps in the future.  Drop your e-mail address below, if you'd like us to keep you informed.</p>
+
+                <form action="">
+                    <input name="email" type="email" placeholder="you@youremailprovider.com" required/>
+                    <input type="submit" value="Subscribe"/>
+                </form>
             </section>
 
             <section class="col-1-2">
                 <h2>Attendance poll</h2>
-                <ul>
-                    <li>Yes, absolutely, not even kidding.</li>
-                    <li>Maybe, kinks to work out</li>
-                    <li>No, go away.</li>
-                </ul>
+
+                <form action="">
+                    <ul>
+                        <li><label for="attendance_poll_yes">
+                            <input id="attendance_poll_yes" name="attendance_poll" type="radio" value="yes"/>
+                            Yes, I will definitely attend.
+                        </label></li>
+                        <li><label for="attendance_poll_maybe">
+                            <input id="attendance_poll_maybe" name="attendance_poll" type="radio" value="maybe"/>
+                            Maybe, I'm not quite sure yet.
+                        </label></li>
+                        <li><label for="attendance_poll_get_fuct">
+                            <input id="attendance_poll_get_fuct" name="attendance_poll" type="radio" value="no"/>
+                            No, I won't be attending.
+                        </label></li>
+                    </ul>
+                    <input type="submit" value="Submit"/>
+                </form>
             </section>
         </div>
+
+        <div class="clearfix"></div>
     </div>
 {% endblock %}
