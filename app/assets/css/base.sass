@@ -1,28 +1,8 @@
-@import "../../../bower_components/bourbon/dist/_bourbon.scss"
-@import _reset.sass
-@import _sticky_footer.sass
-@import _grid.sass
-
-// ----------------------------------------------------------------------------
-
-
-$font_family: 'Droid Serif', serif
-$font_size: 14px
-
-$text_color: #ddd
-
-$header_color_light: #999
-$header_color_dark: #666
-
-$footer_color_light: #666
-$footer_color_dark: #333
-
-$background_color: #222
-$background_color_darker: #111
-$background_color_lighter: #333
-
-$banner_color: #444
-$banner_color_lighter: #333
+@import "../../../bower_components/bourbon/dist/bourbon"
+@import "../../../bower_components/neat/app/assets/stylesheets/neat"
+@import reset
+@import variables
+@import sticky_footer
 
 // ----------------------------------------------------------------------------
 
@@ -60,10 +40,6 @@ h3
 h1,h2,h3,h4,h5,h6,p
   padding: 0.5em 0
 
-.container
-  margin: 0 auto
-  width: 960px
-
 
 header
   width: 100%
@@ -75,28 +51,52 @@ header
   &:hover
     color: $header_color_light
 
-  .container
+  section
+    @include outer-container
     padding: 1em 0
 
     h1
       font-size: $font_size
 
-.content
+main
   width: 100%
 
-  .banner
+  section.banner
     background: url('/static/img/tmp_ti_banner.jpg') center
     border-bottom: 1px dashed $banner_color_lighter
     text-align: center
     padding: 4em 0
     text-shadow: 1px 1px 1px black
 
-    h1,h2
-      padding: 0
+    div
+      @include outer-container
 
-  section
-    //border: 1px dashed $text_color
-    padding: 1em
+      h1
+        padding: 0
+        font-size: golden-ratio($font_size, 2) // Reduce font size in banner on mobile
+
+        @include media($mobile)
+          font-size: golden-ratio($font_size, 3)
+
+      h2
+        padding: 0.25em 0 0 0
+        font-size: golden-ratio($font_size, 1) // Reduce font size in banner on mobile
+
+        @include media($mobile)
+          font-size: golden-ratio($font_size, 2)
+
+  article
+    @include outer-container
+
+    &.home-page
+      section
+        @include span-columns(10)
+        @include shift(1)
+
+        @include media($tablet)
+          @include span-columns(6)
+          @include shift(0)
+          @include omega(2n)
 
 footer
   width: 100%
@@ -107,7 +107,8 @@ footer
   &:hover
     color: $footer_color_light
 
-  .container
+  section
+    @include outer-container
     padding: 1em 0
 
     ul li
