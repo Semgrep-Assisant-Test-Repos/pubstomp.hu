@@ -71,30 +71,32 @@ main
   width: 100%
 
   section.banner
-    background: url('/static/img/tmp_ti_banner.jpg') center
     border-bottom: 1px dashed $banner_color_lighter
     text-align: center
-    padding: 4em 0
     text-shadow: 1px 1px 1px black
+    padding: 1em 0
 
-    div
-      @include outer-container
+    &.large
+      padding: 4em 0
 
-      h1
-        color: $text_color
-        padding: 0
-        font-size: golden-ratio($font_size, 2) // Reduce font size in banner on mobile
+    &.ti3
+      background: url('/static/img/tmp_ti_banner.jpg') center
 
-        @include media($mobile)
-          font-size: golden-ratio($font_size, 3)
+    h1
+      color: $text_color
+      padding: 0
+      font-size: golden-ratio($font_size, 2) // Reduce font size in banner on mobile
 
-      h2
-        color: $text_color
-        padding: 0.25em 0 0 0
-        font-size: golden-ratio($font_size, 1) // Reduce font size in banner on mobile
+      @include media($mobile)
+        font-size: golden-ratio($font_size, 3)
 
-        @include media($mobile)
-          font-size: golden-ratio($font_size, 2)
+    h2
+      color: $text_color
+      padding: 0.25em 0 0 0
+      font-size: golden-ratio($font_size, 1) // Reduce font size in banner on mobile
+
+      @include media($mobile)
+        font-size: golden-ratio($font_size, 2)
 
   article
     @include outer-container
