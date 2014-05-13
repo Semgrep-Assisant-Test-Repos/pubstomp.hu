@@ -6,18 +6,25 @@ $font_size: 14px
 
 $text_color: #ddd
 
-$header_color_light: #999
-$header_color_dark: #666
+$header_text_color: #666
+$header_text_color_hover: lighten($header_text_color, 20%)
 
-$footer_color_light: #666
-$footer_color_dark: #333
+$footer_text_color: #333
+$footer_text_color_hover: lighten($footer_text_color, 20%)
 
 $background_color: #222
-$background_color_darker: #111
-$background_color_lighter: #333
+$background_color_darker: darken($background_color, 7.5%)
+$background_color_lighter: lighten($background_color, 10%)
 
 $banner_color: #444
 $banner_color_lighter: #333
+
+//$heading_color: #37864D // "Deep Green" from http://d2lp.com/tutorial/
+//$link_color: #D03D33 // "Red" from http://d2lp.com/tutorial/
+
+$heading_color: #D03D33 // "Red" from http://d2lp.com/tutorial/
+$link_color: #51B350 // "Verdant Green" from http://d2lp.com/tutorial/
+$link_color_hover: lighten($link_color, 20%)
 
 // Breakpoints
 $mobile: new-breakpoint(min-width em(480))

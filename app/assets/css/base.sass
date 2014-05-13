@@ -37,19 +37,28 @@ h2
 h3
   font-size: golden-ratio($font_size, 1)
 
-h1,h2,h3,h4,h5,h6,p
-  padding: 0.5em 0
+h1,h2,h3,h4,h5,h6
+  padding: 0.5em
+  color: $heading_color
 
+p
+  padding: 0.5em
+
+a
+  color: $link_color
+
+  &:hover
+    color: $link_color_hover
 
 header
   width: 100%
   height: 3em
   background-color: $background_color_darker
   border-bottom: 1px dashed $background_color_lighter
-  color: $header_color_dark
+  color: $header_text_color
 
   &:hover
-    color: $header_color_light
+    color: $header_text_color_hover
 
   section
     @include outer-container
@@ -72,6 +81,7 @@ main
       @include outer-container
 
       h1
+        color: $text_color
         padding: 0
         font-size: golden-ratio($font_size, 2) // Reduce font size in banner on mobile
 
@@ -79,6 +89,7 @@ main
           font-size: golden-ratio($font_size, 3)
 
       h2
+        color: $text_color
         padding: 0.25em 0 0 0
         font-size: golden-ratio($font_size, 1) // Reduce font size in banner on mobile
 
@@ -102,10 +113,10 @@ footer
   width: 100%
   background-color: $background_color_darker
   border-top: 1px dashed $background_color_lighter
-  color: $footer_color_dark
+  color: $footer_text_color
 
   &:hover
-    color: $footer_color_light
+    color: $footer_text_color_hover
 
   section
     @include outer-container
