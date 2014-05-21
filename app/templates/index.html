@@ -1,12 +1,49 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+    <video class="background" loop autoplay>
+        <source src="{{ url_for('static', filename='img/bg.webm') }}" type="video/webm">
+    </video>
     <section class="banner large ti3">
-        <h1>The International 2014</h1>
+        <h1>The International 2014<br>Hungarian Pubstomp</h1>
         <h2>
             <span class="date">July 18 &ndash; 21</span>,
-            <span class="location">Bence's house</span>
+            <span class="location">Budapest</span>
         </h2>
+    </section>
+
+    <section class="heroes">
+        <section class="newsletter">
+            <h2>Sign up for email updates</h2>
+            <p>Drop your e&dash;mail below if you'd like us to keep you informed about the event.</p>
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="http://pubstomp.us8.list-manage1.com/subscribe/post?u=213ad8d5eccb315b953a5d448&amp;id=af97de488e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                    <div class="mc-field-group">
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_213ad8d5eccb315b953a5d448_af97de488e" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+        </section>
+        <section class="poll">
+            <h2>Tell us if you're coming</h2>
+            <p>Before we book the venue, we'll need to know how big an audience to expect.</p>
+
+            <button>Yes, I will definitely attend.</button>
+            <button>Maybe, I'm not quite sure yet.</button>
+            <button>No, I won't be attending.</button>
+        </section>
     </section>
     <article class="home-page">
         <section>
@@ -59,57 +96,6 @@
 
             <h3>Travelling in?</h3>
             <p>Bus routes? Train route? Taxi cost from inner-city, suburbs, airport?</p>
-        </section>
-
-        <section>
-            <h2>Newsletter signup</h2>
-            <p>We hope to run many more pubstomps in the future.  Drop your e-mail address below, if you'd like us to keep you informed.</p>
-
-            <!-- Begin MailChimp Signup Form -->
-            <div id="mc_embed_signup">
-                <form action="http://pubstomp.us8.list-manage1.com/subscribe/post?u=213ad8d5eccb315b953a5d448&amp;id=af97de488e"
-                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                      class="validate" target="_blank" novalidate>
-
-                    <div class="mc-field-group">
-                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
-                    </div>
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;"><input type="text"
-                                                                           name="b_213ad8d5eccb315b953a5d448_af97de488e"
-                                                                           tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
-                                              id="mc-embedded-subscribe" class="button"></div>
-                </form>
-            </div>
-
-            <!--End mc_embed_signup-->
-        </section>
-
-        <section class="col-1-2">
-            <h2>Attendance poll</h2>
-
-            <form action="">
-                <ul>
-                    <li><label for="attendance_poll_yes">
-                        <input id="attendance_poll_yes" name="attendance_poll" type="radio" value="yes"/>
-                        Yes, I will definitely attend.
-                    </label></li>
-                    <li><label for="attendance_poll_maybe">
-                        <input id="attendance_poll_maybe" name="attendance_poll" type="radio" value="maybe"/>
-                        Maybe, I'm not quite sure yet.
-                    </label></li>
-                    <li><label for="attendance_poll_get_fuct">
-                        <input id="attendance_poll_get_fuct" name="attendance_poll" type="radio" value="no"/>
-                        No, I won't be attending.
-                    </label></li>
-                </ul>
-                <input type="submit" value="Submit"/>
-            </form>
         </section>
     </article>
 {% endblock %}
