@@ -1,4 +1,5 @@
 flask>=0.10
 flask-redis>=0.0.5
+flask-babel>=0.9
 invoke>=0.7
 slimit>=0.8.1

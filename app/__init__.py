@@ -2,6 +2,7 @@ import os
 
 from flask import Flask
 from flask_redis import Redis
+from flask.ext.babel import Babel
 
 # Init app
 app = Flask(__name__, static_url_path='/static', static_folder='assets')
@@ -19,6 +20,7 @@ except ImportError:  # Assuming Heroku
 
 # Init middleware
 redis = Redis(app)
+babel = Babel(app)
 
 # Load stuff
 from app.views import *
