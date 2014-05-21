@@ -2,6 +2,6 @@ from flask import render_template
 from app import app
 
 
-@app.route('/<locale>')
+@app.route('/')
 def index():
     return render_template('index.html')
