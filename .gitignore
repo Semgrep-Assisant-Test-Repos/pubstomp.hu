@@ -1,3 +1,10 @@
+# Project Specific
+
+.sass-cache
+*.css
+*.min.js
+bower_components
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
