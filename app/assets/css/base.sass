@@ -54,130 +54,137 @@ a
 main
   width: 100%
 
-  video
-    position: fixed
-    bottom: 0
-    left: 0
-    min-width: 100%
-    min-height: 100%
-    overflow: hidden
-    z-index: -1
+  section.initial
+    height: 100vh;
 
-  section.banner
-    text-align: center
-    text-shadow: 2px 2px 4px #222
-    padding: 1em 0
+    video
+      position: fixed
+      bottom: 0
+      left: 0
+      min-width: 100%
+      min-height: 100%
+      overflow: hidden
+      z-index: -1
 
-    &.large
-      padding: 8em 0
+    section.banner
+      text-align: center
+      text-shadow: 2px 2px 4px #222
+      padding: 1em 0
 
-    h1
-      color: $text_color
-      padding: 0
-      font-size: golden-ratio($font_size, 2) // Reduce font size in banner on mobile
+      &.large
+        padding: 8em 0
 
-      @include media($mobile)
-        font-size: golden-ratio($font_size, 3)
+      h1
+        color: $text_color
+        padding: 0
+        font-size: golden-ratio($font_size, 2) // Reduce font size in banner on mobile
 
-    h2
-      color: $text_color
-      padding: 0.75em 0 0 0
-      font-size: golden-ratio($font_size, 1) // Reduce font size in banner on mobile
+        @include media($mobile)
+          font-size: golden-ratio($font_size, 3)
 
-      @include media($mobile)
-        font-size: golden-ratio($font_size, 2)
+      h2
+        color: $text_color
+        padding: 0.75em 0 0 0
+        font-size: golden-ratio($font_size, 1) // Reduce font size in banner on mobile
 
-  section.heroes
-    @include outer-container
-    text-shadow: 2px 2px 4px #222
-    text-align: center
-    padding-bottom: 8em
+        @include media($mobile)
+          font-size: golden-ratio($font_size, 2)
 
-    h2
-      padding: 0
+    section.heroes
+      @include outer-container
+      text-shadow: 2px 2px 4px #222
+      text-align: center
+      padding-bottom: 8em
 
-    p
-      font-size: golden-ratio($font_size, 1)
+      h2
+        padding: 0
 
-    input, button
-      height: golden-ratio($font_size, 3)
-      font-size: golden-ratio($font_size, 1)
+      p
+        font-size: golden-ratio($font_size, 1)
 
-    input.button, button
-      box-shadow: 0 0 16px black
-      cursor: pointer
+      input, button
+        height: golden-ratio($font_size, 3)
+        font-size: golden-ratio($font_size, 1)
 
-    input.button:focus, button:focus, input.button:hover, button:hover
-      outline: none
+      input.button, button
+        box-shadow: 0 0 16px black
+        cursor: pointer
 
-    input.button:active, button:active
-      box-shadow: 0 0 8px black inset
+      input.button:focus, button:focus, input.button:hover, button:hover
+        outline: none
+
+      input.button:active, button:active
+        box-shadow: 0 0 8px black inset
 
 
-    section.newsletter
-      @include span-columns(6)
+      section.newsletter
+        @include span-columns(6)
 
-      input
-        border: 0
-        color: white
+        input
+          border: 0
+          color: white
 
-        &.email
-          @include span-columns(8)
-          background: rgba(0, 0, 0, 0.2)
-          box-shadow: 0 0 16px black inset
-          padding: 0 0.5em
-          transition: background 0.2s
-          border-radius: 10px 0 0 10px
+          &.email
+            @include span-columns(8)
+            background: rgba(0, 0, 0, 0.2)
+            box-shadow: 0 0 16px black inset
+            padding: 0 0.5em
+            transition: background 0.2s
+            border-radius: 10px 0 0 10px
 
-          &:focus
-            outline: none
-            background: rgba(0, 0, 0, 0.8)
+            &:focus
+              outline: none
+              background: rgba(0, 0, 0, 0.8)
 
-        &.button
+          &.button
+            @include span-columns(4)
+            border-radius: 0 10px 10px 0
+            background: rgba(0, 255, 0, 0.2)
+
+      section.poll
+        @include span-columns(6)
+
+        button
           @include span-columns(4)
-          border-radius: 0 10px 10px 0
-          background: rgba(0, 255, 0, 0.2)
+          border: 0
+          border-radius: 10px
+          color: white
+          font-size: $font_size
+          transition: background 0.2s
 
-    section.poll
-      @include span-columns(6)
+          &.yes
+            background: rgba(0, 255, 0, 0.2)
+            &:hover, &:focus
+              background: rgba(0, 255, 0, 0.4)
+          &.maybe
+            background: rgba(255, 127, 0, 0.2)
+            &:hover, &:focus
+              background: rgba(255, 127, 0, 0.4)
+          &.no
+            background: rgba(255, 0, 0, 0.2)
+            &:hover, &:focus
+              background: rgba(255, 0, 0, 0.4)
 
-      button
-        @include span-columns(4)
-        border: 0
-        border-radius: 10px
-        color: white
-        font-size: $font_size
-        transition: background 0.2s
+  section.content
+    width: 100%
+    background: rgba(0, 0, 0, 0.9)
+    box-shadow: 0 0 42px black
+    padding: 24px
 
-        &.yes
-          background: rgba(0, 255, 0, 0.2)
-          &:hover, &:focus
-            background: rgba(0, 255, 0, 0.4)
-        &.maybe
-          background: rgba(255, 127, 0, 0.2)
-          &:hover, &:focus
-            background: rgba(255, 127, 0, 0.4)
-        &.no
-          background: rgba(255, 0, 0, 0.2)
-          &:hover, &:focus
-            background: rgba(255, 0, 0, 0.4)
+    article
+      @include outer-container
 
-  article
-    @include outer-container
+      &.home-page
+        background: $background_color
 
-    &.home-page
-      background: $background_color
-      padding: 10px
-      border-radius: 10px
-      box-shadow: 0 0 42px $background_color
-      section
-        @include span-columns(10)
-        @include shift(1)
+        section
+          @include span-columns(10)
+          @include shift(1)
 
-        @include media($tablet)
-          @include span-columns(6)
-          @include shift(0)
-          @include omega(2n)
+          @include media($tablet)
+            @include span-columns(6)
+            @include shift(0)
+            @include omega(2n)
 
 footer
   width: 100%
