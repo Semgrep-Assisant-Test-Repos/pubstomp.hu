@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>{{ title or 'pubstomp.hu' }}</title>
-    <meta name='description' content='{{ meta_description or "Budapest's toppest party EU 2011." }}'>
+    <meta name='description' content='{{ meta_description }}'>
     <meta charset='utf-8'>
 
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
@@ -29,7 +29,7 @@
             <span class="left">&copy; <a href="http://arcana.io">Arcana.io</a> 2014</span>
             <nav class="right">
                 <ul>
-                    <li>Contact us at <a href="mailto:team@pubstomp.hu">team@pubstomp.hu</a></li>
+                    <li>{{ _('contact_us') }}</li>
                 </ul>
             </nav>
         </section>

@@ -139,7 +139,11 @@ main
           &.button
             @include span-columns(4)
             border-radius: 0 10px 10px 0
-            background: rgba(0, 255, 0, 0.2)
+            background: rgba(0, 255, 0, 0.4)
+            transition: background 0.2s
+
+            &:hover, &:focus
+              background: rgba(0, 255, 0, 0.6)
 
       section.poll
         @include span-columns(6)
@@ -149,25 +153,28 @@ main
           border: 0
           border-radius: 10px
           color: white
-          font-size: $font_size
+          font-size: golden-ratio($font_size, -1)
           transition: background 0.2s
 
           &.yes
-            background: rgba(0, 255, 0, 0.2)
+            background: rgba(0, 255, 0, 0.4)
             &:hover, &:focus
-              background: rgba(0, 255, 0, 0.4)
+              background: rgba(0, 255, 0, 0.6)
           &.maybe
-            background: rgba(255, 127, 0, 0.2)
+            background: rgba(255, 127, 0, 0.4)
             &:hover, &:focus
-              background: rgba(255, 127, 0, 0.4)
+              background: rgba(255, 127, 0, 0.6)
           &.no
-            background: rgba(255, 0, 0, 0.2)
+            background: rgba(255, 0, 0, 0.4)
             &:hover, &:focus
-              background: rgba(255, 0, 0, 0.4)
+              background: rgba(255, 0, 0, 0.6)
+
+          .short-answer
+            font-size: golden-ratio($font_size, 1)
 
   section.content
     width: 100%
-    background: rgba(0, 0, 0, 0.9)
+    background: rgba(0, 0, 0, 0.97)
     box-shadow: 0 0 42px black
     padding: 24px
 

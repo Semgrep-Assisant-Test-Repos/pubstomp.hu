@@ -1,0 +1,156 @@
+# Hungarian translations for pubstomp.hu
+# Copyright (C) 2014 pubstomp.hu
+# This file is distributed under the same license as the pubstomp.hu project.
+# Bence Nagy <bence@underyx.me>, 2014.
+
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2014-05-23 05:53+0200\n"
+"PO-Revision-Date: 2014-05-23 06:38+0100\n"
+"Last-Translator: Bence Nagy <bence@underyx.me>\n"
+"Language-Team: hu\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+"Language: hu\n"
+"X-Generator: Poedit 1.6.5\n"
+
+#: app/templates/index.html:9
+msgid "title_ti2014"
+msgstr "The International 2014"
+
+#: app/templates/index.html:9
+msgid "subtitle_hun_pubstomp"
+msgstr "Magyar Pubstomp"
+
+#: app/templates/index.html:11
+msgid "event_date"
+msgstr "július 18 &ndash; 21"
+
+#: app/templates/index.html:12
+msgid "event_location"
+msgstr "Budapest"
+
+#: app/templates/index.html:18
+msgid "newsletter_title"
+msgstr "Add meg az email címed"
+
+#: app/templates/index.html:19
+msgid "newsletter_description"
+msgstr ""
+"Ha feliratkozol a hírlevelünkre, majd tudjunk értesíteni a részletekről"
+
+#: app/templates/index.html:26
+msgid "newsletter_placeholder"
+msgstr "Email cím"
+
+#: app/templates/index.html:34
+msgid "newsletter_button"
+msgstr "Feliratkozás"
+
+#: app/templates/index.html:41
+msgid "poll_title"
+msgstr "Szólj, hogy eljössz-e"
+
+#: app/templates/index.html:42
+msgid "poll_description"
+msgstr "Mielőtt lefoglalunk egy helyet, szeretnénk tudni, hányan is leszünk"
+
+#: app/templates/index.html:44
+msgid "poll_yes_title"
+msgstr "Igen"
+
+#: app/templates/index.html:44
+msgid "poll_yes_description"
+msgstr "Mindenképp elmegyek"
+
+#: app/templates/index.html:45
+msgid "poll_maybe_title"
+msgstr "Talán"
+
+#: app/templates/index.html:45
+msgid "poll_maybe_description"
+msgstr "Még nem tudom, elmegyek-e"
+
+#: app/templates/index.html:46
+msgid "poll_no_title"
+msgstr "Nem"
+
+#: app/templates/index.html:46
+msgid "poll_no_description"
+msgstr "Biztos, hogy nem megyek el"
+
+#: app/templates/index.html:53
+msgid "whats_a_pubstomp_title"
+msgstr "Mi az, hogy \"pubstomp\"?"
+
+#: app/templates/index.html:54
+msgid "whats_a_pubstomp_text"
+msgstr ""
+"Egy pubstomp gyakorlatilag egy olyan esemény, ahol Dota rajongók együtt "
+"nézik esport bajnokságok meccseit. Az ötlet 2011-ből származik, amikor "
+"Starcraft játékosok kezdtek el úgynevezett <a href=\"http://en.wikipedia.org/"
+"wiki/BarCraft\">Barcraftokat</a> szervezni&mdash;azóta pedig csak egyre "
+"népszerűbbé válnak ezek az összejövetelek, mint ahogy a bajnokságok hírneve "
+"is egyre csak nő."
+
+#: app/templates/index.html:56
+msgid "why_pubstomp_title"
+msgstr "Miért menjek el a pubstompra?"
+
+#: app/templates/index.html:57
+msgid "why_pubstomp_text_1"
+msgstr ""
+"A pubstompok azoknak valók, akik nem tudnak a rendes bajnokságra kimenni, de "
+"mégis ugyanolyan atmoszférájú helyen és közösségben szeretnék végigizgulni a "
+"meccseket, mint élőben. Arról nem is beszélve, hogy rengeteg embert "
+"ismerhesz így meg, akiknek ugyanaz a hobbija, mint neked."
+
+#: app/templates/index.html:58
+msgid "why_pubstomp_text_2"
+msgstr ""
+"Ha ez még nem elég: az ilyen eseményeket gyakran támogatják a játékfejlesztő "
+"cégek és kapcsolódó szervezetek kisebb-nagyobb ajándékokkal, amik aztán "
+"kiosztásra kerülnek a nézők között. Nem tudjuk persze még garantálni, hogy "
+"ez idén is így lesz, de mi mindenképp megpróbálunk majd valami módot találni "
+"rá, hogy minél több embert rávegyünk a részvételre."
+
+#: app/templates/index.html:60
+msgid "whats_an_international_title"
+msgstr "Mi az a \"The International\"?"
+
+#: app/templates/index.html:61
+msgid "whats_an_international_text"
+msgstr ""
+"Az <a href=\"http://www.dota2.com/international/announcement/"
+"\">International</a> az évente megrendezett legnagyobb Dota 2 bajnokság, "
+"ahol a világ legjobb csapatai mérkőznek meg az esport történelmének "
+"leghatalmasabb pénznyereményeiért&mdash;idén az összdíjazás átlépheti akár a "
+"kétmilliárd forintot is. A bajnokság szervezője a <a href=\"http://"
+"valvesoftware.com/\">Valve Corporation</a>, a Dota 2 fejlesztője. A "
+"bajnokságot külső szponzorok nélkül rendezik meg, és gyakran nevezik ezt a "
+"világ leginnovatívabb esport eseményének, ahol minden évben kitalálnak "
+"valami új módot az esport támogatására."
+
+#: app/templates/index.html:65
+msgid "attend_title"
+msgstr "Részvétel"
+
+#: app/templates/index.html:66
+msgid "attend_text"
+msgstr "leírás a helyről meg ilyenek"
+
+#: app/templates/index.html:75
+msgid "travelling_title"
+msgstr "Vidékieknek"
+
+#: app/templates/index.html:76
+msgid "travelling_text"
+msgstr "utazási infók"
+
+#: app/templates/layout.html:32
+msgid "contact_us"
+msgstr ""
+"Írj nekünk a <a href=\"mailto:team@pubstomp.hu\">team@pubstomp.hu</a> címre!"

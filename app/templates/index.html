@@ -6,24 +6,24 @@
             <source src="{{ url_for('static', filename='img/background.webm') }}" type="video/webm">
         </video>
         <section class="banner large ti3">
-            <h1>The International 2014<br>Hungarian Pubstomp</h1>
+            <h1>{{ _('title_ti2014') }}<br>{{ _('subtitle_hun_pubstomp') }}</h1>
             <h2>
-                <span class="date">July 18 &ndash; 21</span>,
-                <span class="location">Budapest</span>
+                <span class="date">{{ _('event_date') }}</span>,
+                <span class="location">{{ _('event_location') }}</span>
             </h2>
         </section>
 
         <section class="heroes">
             <section class="newsletter">
-                <h2>Sign up for email updates</h2>
-                <p>Drop your e&dash;mail below if you'd like us to keep you informed about the event.</p>
+                <h2>{{ _('newsletter_title') }}</h2>
+                <p>{{ _('newsletter_description') }}</p>
 
                 <!-- Begin MailChimp Signup Form -->
                 <div id="mc_embed_signup">
                     <form action="http://pubstomp.us8.list-manage1.com/subscribe/post?u=213ad8d5eccb315b953a5d448&amp;id=af97de488e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
                         <div class="mc-field-group">
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="{{ _('newsletter_placeholder') }}">
                         </div>
                         <div id="mce-responses" class="clear">
                             <div class="response" id="mce-error-response" style="display:none"></div>
@@ -31,64 +31,39 @@
                         </div>
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;"><input type="text" name="b_213ad8d5eccb315b953a5d448_af97de488e" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        <div class="clear"><input type="submit" value="{{ _('newsletter_button') }}" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                     </form>
                 </div>
 
                 <!--End mc_embed_signup-->
             </section>
             <section class="poll">
-                <h2>Tell us if you're coming</h2>
-                <p>Before we book the venue, we'll need to know how big an audience to expect.</p>
+                <h2>{{ _('poll_title') }}</h2>
+                <p>{{ _('poll_description') }}</p>
 
-                <button class="yes">Yes, I will definitely attend.</button>
-                <button class="maybe">Maybe, I'm not quite sure yet.</button>
-                <button class="no">No, I won't be attending.</button>
+                <button class="yes"><span class="short-answer">{{ _('poll_yes_title') }}</span><br>{{ _('poll_yes_description') }}</button>
+                <button class="maybe"><span class="short-answer">{{ _('poll_maybe_title') }}</span><br>{{ _('poll_maybe_description') }}</button>
+                <button class="no"><span class="short-answer">{{ _('poll_no_title') }}</span><br>{{ _('poll_no_description') }}</button>
             </section>
         </section>
     </section>
     <section class="content">
         <article class="home-page">
             <section>
-                <h3>What is a pubstomp?</h3>
-                <p>
-                    A pubstomp is simply a gathering of Dota fans in pubs or bars to watch the hottest e-sports happenings
-                    throughout the year.  The phenomonon stems from the Starcraft scene in early 2011 (where it's called
-                    "<a href="http://en.wikipedia.org/wiki/BarCraft">Barcraft</a>"), and is only becomming more common as more games enter the e-sports scene, and more
-                    prestigious events are held.
-                </p>
+                <h3>{{ _('whats_a_pubstomp_title') }}</h3>
+                <p>{{ _('whats_a_pubstomp_text') }}</p>
 
-                <h3>Why should I go to a pubstomp?</h3>
-                <p>
-                    Pubstomps are a substitute for being at the live event - you get a sense of atmosphere and community
-                    that you don't get just watching the games at home.  You also get to socialize and meet others local
-                    to you with similar interests, and that's never a bad thing.
-                </p>
-                <p>
-                    If you need further incentive &ndash; it's not uncommon for companies and organizations associated to
-                    the game being watched to offer up swag and prizes to pubstomp attendees.  We can't offer any guarantees
-                    that this will happen at our event, but we are certainly looking at how we can further incentivize people
-                    to attend.
-                </p>
+                <h3>{{ _('why_pubstomp_title') }}</h3>
+                <p>{{ _('why_pubstomp_text_1') }}</p>
+                <p>{{ _('why_pubstomp_text_2') }}</p>
 
-                <h3>What is The International?</h3>
-                <p>
-                    <a href="http://www.dota2.com/international/announcement/">The International</a> is Dota 2's annual championship tournament, inviting top teams from around the world
-                    to compete for one of the largest prize pools in E-sports history.  The tournament is hosted by <a href="http://valvesoftware.com/">Valve
-                    Corporation</a> &ndash; the developer's of Dota 2, without any external sponsors, and is often regarded
-                    as one of the most innovative e-sports events &ndash; finding new ways to support the e-sports industry
-                    year after year.
-                </p>
+                <h3>{{ _('whats_an_international_title') }}</h3>
+                <p>{{ _('whats_an_international_text') }}</p>
 
             </section>
             <section>
-                <h3>Attend</h3>
-                <p>
-                    Pubstomp.hu's The International 2014 event will be held at LOCATION<!--TODO-->. Anybody is welcome to
-                    attend, and attendance is (?:free|COSTS_DOLLARS<!--TODO-->). Food and drink will be available at the event.
-                </p>
-
-                <p>Any other facilities?</p>
+                <h3>{{ _('attend_title') }}</h3>
+                <p>{{ _('attend_text') }}</p>
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10781.938617732896!2d19.04086638073983!3d47.499951947536175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c334d1d4cfc9%3A0x400c4290c1e1160!2sBudapest!5e0!3m2!1sen!2s!4v1399466870641"
@@ -97,8 +72,8 @@
                     frameborder="0"
                     style="border:0"></iframe>
 
-                <h3>Travelling in?</h3>
-                <p>Bus routes? Train route? Taxi cost from inner-city, suburbs, airport?</p>
+                <h3>{{ _('travelling_title') }}</h3>
+                <p>{{ _('travelling_text') }}</p>
             </section>
         </article>
     </section>
