@@ -40,10 +40,27 @@
             <section class="poll">
                 <h2>{{ _('poll_title') }}</h2>
                 <p>{{ _('poll_description') }}</p>
-
-                <button class="yes"><span class="short-answer">{{ _('poll_yes_title') }}</span><br>{{ _('poll_yes_description') }}</button>
-                <button class="maybe"><span class="short-answer">{{ _('poll_maybe_title') }}</span><br>{{ _('poll_maybe_description') }}</button>
-                <button class="no"><span class="short-answer">{{ _('poll_no_title') }}</span><br>{{ _('poll_no_description') }}</button>
+                <div class="interactive-area">
+                    <div class="buttons">
+                        <button class="yes" value="yes">
+                            <span class="short-answer">{{ _('poll_yes_title') }}</span><br>
+                            {{ _('poll_yes_description') }}
+                        </button>
+                        <button class="maybe" value="maybe">
+                            <span class="short-answer">{{ _('poll_maybe_title') }}</span><br>
+                            {{ _('poll_maybe_description') }}
+                        </button>
+                        <button class="no" value="no">
+                            <span class="short-answer">{{ _('poll_no_title') }}</span><br>
+                            {{ _('poll_no_description') }}
+                        </button>
+                    </div>
+                    <div class="confirmation-message">
+                        <div class="yes">Thanks, see you there!</div>
+                        <div class="maybe">Thanks, we hope you'll be there!</div>
+                        <div class="no">Aww, well, we recorded your response.</div>
+                    </div>
+                </div>
             </section>
         </section>
     </section>

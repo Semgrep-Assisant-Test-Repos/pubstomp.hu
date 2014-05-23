@@ -148,29 +148,36 @@ main
       section.poll
         @include span-columns(6)
 
-        button
-          @include span-columns(4)
-          border: 0
-          border-radius: 10px
-          color: white
-          font-size: golden-ratio($font_size, -1)
-          transition: background 0.2s
+        .interactive-area
+          height: golden-ratio($font_size, 3)
+          overflow: hidden
 
-          &.yes
-            background: rgba(0, 255, 0, 0.4)
-            &:hover, &:focus
-              background: rgba(0, 255, 0, 0.6)
-          &.maybe
-            background: rgba(255, 127, 0, 0.4)
-            &:hover, &:focus
-              background: rgba(255, 127, 0, 0.6)
-          &.no
-            background: rgba(255, 0, 0, 0.4)
-            &:hover, &:focus
-              background: rgba(255, 0, 0, 0.6)
+          .buttons
+            transform: translateY(-10px)
 
-          .short-answer
-            font-size: golden-ratio($font_size, 1)
+          button
+            @include span-columns(4)
+            border: 0
+            border-radius: 10px
+            color: white
+            font-size: golden-ratio($font_size, -1)
+            transition: background 0.2s
+
+            &.yes
+              background: rgba(0, 255, 0, 0.4)
+              &:hover, &:focus
+                background: rgba(0, 255, 0, 0.6)
+            &.maybe
+              background: rgba(255, 127, 0, 0.4)
+              &:hover, &:focus
+                background: rgba(255, 127, 0, 0.6)
+            &.no
+              background: rgba(255, 0, 0, 0.4)
+              &:hover, &:focus
+                background: rgba(255, 0, 0, 0.6)
+
+            .short-answer
+              font-size: golden-ratio($font_size, 1)
 
   section.content
     width: 100%
