@@ -16,6 +16,10 @@ except ImportError:  # Assuming Heroku
         SECRET_KEY=os.urandom(24),
         DEBUG=bool(os.getenv('DEBUG')),
         REDIS_URL=os.getenv('REDISCLOUD_URL'),
+        GA_TRACKING_ID='UA-51296526-1',
+        GA_DEFAULT_URL='pubstomp.hu',
+        LOCALES={'en': 'English', 'hu': 'magyar'},
+        DEFAULT_LOCALE='hu',
     )
 
 # Init middleware
