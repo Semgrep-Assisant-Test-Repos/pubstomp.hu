@@ -1,12 +1,14 @@
 # English translations for pubstomp.hu
 # Copyright (C) 2014 pubstomp.hu
-# This file is distributed under the same license as the pubstomp.hu project.
+# This file is distributed under the same license as the pubstomp.hu
+# project.
 # Rob Jackson <rob@rjackson.me>, 2014.
-
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2014-05-23 05:53+0200\n"
-"PO-Revision-Date: 2014-05-23 05:35+0200\n"
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2014-05-24 10:53+0200\n"
+"PO-Revision-Date: 2014-04-23 10:57+0200\n"
 "Last-Translator: Bence Nagy <bence@underyx.me>\n"
 "Language-Team: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -37,7 +39,9 @@ msgstr "Sign up for email updates"
 
 #: app/templates/index.html:19
 msgid "newsletter_description"
-msgstr "Drop your email below if you'd like us to keep you informed about the event."
+msgstr ""
+"Drop your email below if you'd like us to keep you informed about the "
+"event."
 
 #: app/templates/index.html:26
 msgid "newsletter_placeholder"
@@ -53,77 +57,110 @@ msgstr "Tell us if you're coming"
 
 #: app/templates/index.html:42
 msgid "poll_description"
-msgstr "Before we book the venue, we'll need to know how big an audience to expect."
+msgstr ""
+"Before we book the venue, we'll need to know how big an audience to "
+"expect."
 
-#: app/templates/index.html:44
+#: app/templates/index.html:46
 msgid "poll_yes_title"
 msgstr "Yes"
 
-#: app/templates/index.html:44
+#: app/templates/index.html:47
 msgid "poll_yes_description"
 msgstr "I will definitely attend"
 
-#: app/templates/index.html:45
+#: app/templates/index.html:50
 msgid "poll_maybe_title"
 msgstr "Maybe"
 
-#: app/templates/index.html:45
+#: app/templates/index.html:51
 msgid "poll_maybe_description"
 msgstr "I'm not quite sure yet"
 
-#: app/templates/index.html:46
+#: app/templates/index.html:54
 msgid "poll_no_title"
 msgstr "No"
 
-#: app/templates/index.html:46
+#: app/templates/index.html:55
 msgid "poll_no_description"
 msgstr "I won't be attending"
 
-#: app/templates/index.html:53
+#: app/templates/index.html:67
+msgid "details"
+msgstr "Details"
+
+#: app/templates/index.html:73
 msgid "whats_a_pubstomp_title"
 msgstr "What is a pubstomp?"
 
-#: app/templates/index.html:54
+#: app/templates/index.html:74
 msgid "whats_a_pubstomp_text"
-msgstr "A pubstomp is simply a gathering of Dota fans in pubs or bars to watch the hottest e-sports happenings throughout the year.  The phenomonon stems from the Starcraft scene in early 2011 (where it's called "<a href="http://en.wikipedia.org/wiki/BarCraft">Barcraft</a>"), and is only becoming more common as more games enter the e-sports scene, and more prestigious events are held."
+msgstr ""
+"A pubstomp is simply a gathering of Dota fans in pubs or bars to watch "
+"the hottest e-sports happenings throughout the year.  The phenomonon "
+"stems from the Starcraft scene in early 2011 (where it's called \"<a "
+"href=\"http://en.wikipedia.org/wiki/BarCraft\">Barcraft</a>\"), and is "
+"only becoming more common as more games enter the e-sports scene, and "
+"more prestigious events are held."
 
-#: app/templates/index.html:56
+#: app/templates/index.html:76
 msgid "why_pubstomp_title"
 msgstr "Why should I go to a pubstomp?"
 
-#: app/templates/index.html:57
+#: app/templates/index.html:77
 msgid "why_pubstomp_text_1"
-msgstr "Pubstomps are a substitute for being at the live event - you get a sense of atmosphere and community that you don't get just watching the games at home.  You also get to socialize and meet others local to you with similar interests, and that's never a bad thing."
+msgstr ""
+"Pubstomps are a substitute for being at the live event - you get a sense "
+"of atmosphere and community that you don't get just watching the games at"
+" home.  You also get to socialize and meet others local to you with "
+"similar interests, and that's never a bad thing."
 
-#: app/templates/index.html:58
+#: app/templates/index.html:78
 msgid "why_pubstomp_text_2"
-msgstr "If you need further incentive &ndash; it's not uncommon for companies and organizations associated to the game being watched to offer up swag and prizes to pubstomp attendees. We can't offer any guarantees that this will happen at our event, but we are certainly looking at how we can further incentivize people to attend."
+msgstr ""
+"If you need further incentive &ndash; it's not uncommon for companies and"
+" organizations associated to the game being watched to offer up swag and "
+"prizes to pubstomp attendees. We can't offer any guarantees that this "
+"will happen at our event, but we are certainly looking at how we can "
+"further incentivize people to attend."
 
-#: app/templates/index.html:60
+#: app/templates/index.html:80
 msgid "whats_an_international_title"
 msgstr "What is The International?"
 
-#: app/templates/index.html:61
+#: app/templates/index.html:81
 msgid "whats_an_international_text"
-msgstr "<a href="http://www.dota2.com/international/announcement/">The International</a> is Dota 2's annual championship tournament, inviting top teams from around the world to compete for one of the largest prize pools in E-sports history. The tournament is hosted by <a href="http://valvesoftware.com/">Valve Corporation</a> &ndash; the developer's of Dota 2, without any external sponsors, and is often regarded as one of the most innovative e-sports events &ndash; finding new ways to support the e-sports industry year after year."
+msgstr ""
+"<a href=\"http://www.dota2.com/international/announcement/\">The "
+"International</a> is Dota 2's annual championship tournament, inviting "
+"top teams from around the world to compete for one of the largest prize "
+"pools in E-sports history. The tournament is hosted by <a "
+"href=\"http://valvesoftware.com/\">Valve Corporation</a> &ndash; the "
+"developer's of Dota 2, without any external sponsors, and is often "
+"regarded as one of the most innovative e-sports events &ndash; finding "
+"new ways to support the e-sports industry year after year."
 
-#: app/templates/index.html:65
+#: app/templates/index.html:85
 msgid "attend_title"
 msgstr "Attend"
 
-#: app/templates/index.html:66
+#: app/templates/index.html:86
 msgid "attend_text"
-msgstr "Pubstomp.hu's The International 2014 event will be held at LOCATION<!--TODO-->. Anybody is welcome to attend, and attendance is (?:free|COSTS_DOLLARS<!--TODO-->). Food and drink will be available at the event."
+msgstr ""
+"Pubstomp.hu's The International 2014 event will be held at LOCATION<!--"
+"TODO-->. Anybody is welcome to attend, and attendance is "
+"(?:free|COSTS_DOLLARS<!--TODO-->). Food and drink will be available at "
+"the event."
 
-#: app/templates/index.html:75
+#: app/templates/index.html:95
 msgid "travelling_title"
 msgstr "Travelling in?"
 
-#: app/templates/index.html:76
+#: app/templates/index.html:96
 msgid "travelling_text"
 msgstr "Bus routes? Train route? Taxi cost from inner-city, suburbs, airport?"
 
 #: app/templates/layout.html:32
 msgid "contact_us"
-msgstr "Contact us at <a href="mailto:team@pubstomp.hu">team@pubstomp.hu</a>"
+msgstr "Contact us at <a href=\"mailto:team@pubstomp.hu\">team@pubstomp.hu</a>"
 

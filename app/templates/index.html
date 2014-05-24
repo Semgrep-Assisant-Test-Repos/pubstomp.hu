@@ -44,15 +44,15 @@
                     <div class="buttons">
                         <button class="yes" value="yes">
                             <span class="short-answer">{{ _('poll_yes_title') }}</span><br>
-                            {{ _('poll_yes_description') }}
+                            <span class="long-answer">{{ _('poll_yes_description') }}</span>
                         </button>
                         <button class="maybe" value="maybe">
                             <span class="short-answer">{{ _('poll_maybe_title') }}</span><br>
-                            {{ _('poll_maybe_description') }}
+                            <span class="long-answer">{{ _('poll_maybe_description') }}</span>
                         </button>
                         <button class="no" value="no">
                             <span class="short-answer">{{ _('poll_no_title') }}</span><br>
-                            {{ _('poll_no_description') }}
+                            <span class="long-answer">{{ _('poll_no_description') }}</span>
                         </button>
                     </div>
                     <div class="confirmation-message">
@@ -63,6 +63,9 @@
                 </div>
             </section>
         </section>
+        <div class="details">
+            <span class="text">{{ _('details') }}</span><br><span class="arrow">&#x25BF;</span>
+        </div>
     </section>
     <section class="content">
         <article class="home-page">

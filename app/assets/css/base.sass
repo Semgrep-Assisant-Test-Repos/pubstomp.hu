@@ -56,6 +56,8 @@ main
 
   section.initial
     height: 100vh
+    text-shadow: 2px 2px 4px #222
+    text-align: center
 
     video
       position: fixed
@@ -64,11 +66,9 @@ main
       min-width: 100%
       min-height: 100%
       overflow: hidden
-      z-index: -1
+      z-index: -20
 
     section.banner
-      text-align: center
-      text-shadow: 2px 2px 4px #222
       padding: 1em 0
 
       &.large
@@ -79,7 +79,7 @@ main
         padding: 0
         font-size: golden-ratio($font_size, 2) // Reduce font size in banner on mobile
 
-        @include media($mobile)
+        @include media($tablet)
           font-size: golden-ratio($font_size, 3)
 
       h2
@@ -87,24 +87,31 @@ main
         padding: 0.75em 0 0 0
         font-size: golden-ratio($font_size, 1) // Reduce font size in banner on mobile
 
-        @include media($mobile)
+        @include media($tablet)
           font-size: golden-ratio($font_size, 2)
 
     section.heroes
       @include outer-container
-      text-shadow: 2px 2px 4px #222
-      text-align: center
-      padding-bottom: 8em
 
       h2
         padding: 0
+        font-size: golden-ratio($font_size, 1)
+
+        @include media($tablet)
+          font-size: golden-ratio($font_size, 2)
 
       p
-        font-size: golden-ratio($font_size, 1)
+        font-size: $font_size
+        @include media($mobile)
+          font-size: golden-ratio($font_size, 1)
 
       input, button
-        height: golden-ratio($font_size, 3)
-        font-size: golden-ratio($font_size, 1)
+        height: golden-ratio($font_size, 2)
+        font-size: $font_size
+
+        @include media($mobile)
+          height: golden-ratio($font_size, 3)
+          font-size: golden-ratio($font_size, 1)
 
       input.button, button
         box-shadow: 0 0 16px black
@@ -116,10 +123,17 @@ main
       input.button:active, button:active
         box-shadow: 0 0 8px black inset
 
+      section
+        @include span-columns(10)
+        @include shift(1)
+        margin-bottom: 4em
+
+        @include media($desktop)
+          @include span-columns(6)
+          @include shift(0)
+          @include omega(2n)
 
       section.newsletter
-        @include span-columns(6)
-
         input
           border: 0
           color: white
@@ -146,10 +160,13 @@ main
               background: rgba(0, 255, 0, 0.6)
 
       section.poll
-        @include span-columns(6)
-
         .interactive-area
-          height: golden-ratio($font_size, 3)
+          height: golden-ratio($font_size, 2)
+          font-size: $font_size
+
+          @include media($mobile)
+            height: golden-ratio($font_size, 3)
+            font-size: golden-ratio($font_size, 1)
           overflow: hidden
 
           .buttons
@@ -178,12 +195,33 @@ main
 
             .short-answer
               font-size: golden-ratio($font_size, 1)
+              line-height: 1.4
+
+            .long-answer
+              display: none
+              @include media($mobile)
+                display: inline
+
+    .details
+      position: fixed
+      bottom: golden-ratio($font_size, 2)
+      width: 100%
+      text-align: center
+      z-index: -10
+
+      .text
+        color: $heading_color
+        font-size: golden-ratio($font_size, 1)
+
+      .arrow
+        font-size: golden-ratio($font_size, 2)
 
   section.content
     width: 100%
     background: rgba(0, 0, 0, 0.97)
     box-shadow: 0 0 42px black
     padding: 24px
+    clear: both
 
     article
       @include outer-container
