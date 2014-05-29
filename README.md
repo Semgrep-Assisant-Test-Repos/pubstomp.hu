@@ -13,7 +13,7 @@ Blame @RJacksonM1 for all these dependencies.
 # Installing
 
     pip install -r requirements.txt
-    gem install -g Gemfile
+    bundle install
     npm install
     bower install
 
