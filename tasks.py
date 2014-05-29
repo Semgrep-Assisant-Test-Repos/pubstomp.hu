@@ -19,7 +19,7 @@ def build():
             )
 
     run('bower install')
-    run('sass app/assets/css/* --style compressed')
+    run('sass --style compressed --update app/assets/css:app/assets/css')
     run('pybabel compile -f -d app/translations')
 
 
