@@ -1,16 +1,22 @@
 pubstomp.hu
 ===========
 
-The code behind http://pubstomp.hu - powered by Flask
+The code behind http://pubstomp.hu - powered by Flask.
+Blame @RJacksonM1 for all these dependencies.
 
 # Requirements
+
 * Python 2.7
-* [Bower](http://bower.io/)
-* [SASS](http://sass-lang.com/)
-* [Virtualenv](https://virtualenv.pypa.io/en/latest/)
+* Ruby
+* node.js
 
 # Installing
 
-Install dependencies
-`pip install -r requirements.txt`
-`bower install`
+    pip install -r requirements.txt
+    gem install -g Gemfile
+    npm install
+    bower install
+
+# Running
+
+    invoke start

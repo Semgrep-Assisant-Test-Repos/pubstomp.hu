@@ -203,11 +203,15 @@ main
                 display: inline
 
     .details
+      display: none
       position: fixed
       bottom: golden-ratio($font_size, 2)
       width: 100%
       text-align: center
       z-index: -10
+
+      @include media(min-width 60em min-height 740px)
+        display: block
 
       .text
         color: $heading_color

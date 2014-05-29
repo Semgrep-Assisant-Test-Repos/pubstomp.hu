@@ -18,6 +18,8 @@ def build():
                 js_minify(js_file.read(), mangle=True, mangle_toplevel=True)
             )
 
+    run('bower install')
+    run('sass app/assets/css/* --style compressed')
     run('pybabel compile -f -d app/translations')
 
 

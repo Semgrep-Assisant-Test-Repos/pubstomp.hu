@@ -1,0 +1,17 @@
+{
+  "name": "pubstomp.hu",
+  "version": "1.0.0-dev",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arcana/pubstomp.hu.git"
+  },
+  "author": "Arcana.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arcana/pubstomp.hu/issues"
+  },
+  "homepage": "https://github.com/arcana/pubstomp.hu",
+  "dependencies": {
+    "bower": ">= 1.3"
+  }
+}
