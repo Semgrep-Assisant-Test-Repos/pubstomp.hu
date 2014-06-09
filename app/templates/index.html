@@ -42,10 +42,10 @@
                 <p>{{ _('poll_description') }}</p>
                 <div class="interactive-area">
                     <div class="confirmation-message {{ vote }}">
-                        <div class="yes">Thanks, see you there!</div>
-                        <div class="maybe">Thanks, we hope you'll be there!</div>
-                        <div class="no">Aww, well, we recorded your response.</div>
-                        <div class="change">(Changed your mind?)</div>
+                        <div class="yes">{{ _('poll_response_yes') }}</div>
+                        <div class="maybe">{{ _('poll_response_maybe') }}</div>
+                        <div class="no">{{ _('poll_response_no') }}</div>
+                        <div class="change">{{ _('poll_response_change') }}</div>
                     </div>
                     <div class="buttons">
                         <button class="yes" value="yes">

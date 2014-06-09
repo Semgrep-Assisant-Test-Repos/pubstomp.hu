@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-05-24 10:53+0200\n"
-"PO-Revision-Date: 2014-06-10 01:19+0100\n"
+"POT-Creation-Date: 2014-06-10 01:21+0200\n"
+"PO-Revision-Date: 2014-06-10 01:25+0100\n"
 "Last-Translator: Bence Nagy <bence@underyx.me>\n"
 "Language-Team: hu\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -59,39 +59,55 @@ msgstr "Szólj, hogy eljössz-e"
 msgid "poll_description"
 msgstr "Mielőtt lefoglalunk egy helyet, szeretnénk tudni, hányan is leszünk"
 
+#: app/templates/index.html:45
+msgid "poll_response_yes"
+msgstr "Oké, ott találkozunk!"
+
 #: app/templates/index.html:46
+msgid "poll_response_maybe"
+msgstr "Rendben, reméljük, ott leszel!"
+
+#: app/templates/index.html:47
+msgid "poll_response_no"
+msgstr "Kár, de azért köszi, hogy szavaztál :("
+
+#: app/templates/index.html:48
+msgid "poll_response_change"
+msgstr "(Meggondoltad magad?)"
+
+#: app/templates/index.html:52
 msgid "poll_yes_title"
 msgstr "Igen"
 
-#: app/templates/index.html:47
+#: app/templates/index.html:53
 msgid "poll_yes_description"
 msgstr "Mindenképp elmegyek"
 
-#: app/templates/index.html:50
+#: app/templates/index.html:56
 msgid "poll_maybe_title"
 msgstr "Talán"
 
-#: app/templates/index.html:51
+#: app/templates/index.html:57
 msgid "poll_maybe_description"
 msgstr "Még nem tudom, elmegyek-e"
 
-#: app/templates/index.html:54
+#: app/templates/index.html:60
 msgid "poll_no_title"
 msgstr "Nem"
 
-#: app/templates/index.html:55
+#: app/templates/index.html:61
 msgid "poll_no_description"
 msgstr "Biztos, hogy nem megyek el"
 
-#: app/templates/index.html:67
+#: app/templates/index.html:68
 msgid "details"
 msgstr "Részletek"
 
-#: app/templates/index.html:73
+#: app/templates/index.html:74
 msgid "whats_a_pubstomp_title"
 msgstr "Mi az, hogy \"pubstomp\"?"
 
-#: app/templates/index.html:74
+#: app/templates/index.html:75
 msgid "whats_a_pubstomp_text"
 msgstr ""
 "Egy pubstomp gyakorlatilag egy olyan esemény, ahol Dota rajongók együtt "
@@ -101,11 +117,11 @@ msgstr ""
 "népszerűbbé válnak ezek az összejövetelek, mint ahogy a bajnokságok hírneve "
 "is egyre csak nő."
 
-#: app/templates/index.html:76
+#: app/templates/index.html:77
 msgid "why_pubstomp_title"
 msgstr "Miért menjek el a pubstompra?"
 
-#: app/templates/index.html:77
+#: app/templates/index.html:78
 msgid "why_pubstomp_text_1"
 msgstr ""
 "A pubstompok azoknak valók, akik nem tudnak a rendes bajnokságra kimenni, de "
@@ -113,7 +129,7 @@ msgstr ""
 "meccseket, mint élőben. Arról nem is beszélve, hogy rengeteg embert "
 "ismerhesz így meg, akiknek ugyanaz a hobbija, mint neked."
 
-#: app/templates/index.html:78
+#: app/templates/index.html:79
 msgid "why_pubstomp_text_2"
 msgstr ""
 "Ha ez még nem elég: az ilyen eseményeket gyakran támogatják a játékfejlesztő "
@@ -122,11 +138,11 @@ msgstr ""
 "ez idén is így lesz, de mi mindenképp megpróbálunk majd valami módot találni "
 "rá, hogy minél több embert rávegyünk a részvételre."
 
-#: app/templates/index.html:80
+#: app/templates/index.html:81
 msgid "whats_an_international_title"
 msgstr "Mi az a \"The International\"?"
 
-#: app/templates/index.html:81
+#: app/templates/index.html:82
 msgid "whats_an_international_text"
 msgstr ""
 "Az <a href=\"http://www.dota2.com/international/announcement/"
@@ -139,11 +155,11 @@ msgstr ""
 "világ leginnovatívabb esport eseményének, ahol minden évben kitalálnak "
 "valami új módot az esport támogatására."
 
-#: app/templates/index.html:85
+#: app/templates/index.html:86
 msgid "attend_title"
 msgstr "Részvétel"
 
-#: app/templates/index.html:86
+#: app/templates/index.html:87
 msgid "attend_text"
 msgstr ""
 "A Pubstomp.hu The International 2014-es összejövetelét Budapest szívében, "
@@ -155,18 +171,18 @@ msgstr ""
 "részvétel ingyenes legyen, de sajnos ezt még nem tudjuk garantálni. Szintén "
 "prioritásként kezeljük azt, hogy legyen a helyen étel, és ital."
 
-#: app/templates/index.html:95
+#: app/templates/index.html:98
 msgid "travelling_title"
 msgstr "Vidékieknek"
 
-#: app/templates/index.html:96
+#: app/templates/index.html:99
 msgid "travelling_text"
 msgstr ""
 "Mikor már tudjuk, hogy hol lesz megrendezve az esemény, ide kiírjuk, hogy "
 "hogyan lehet legegyszerűbben megközelíteni a helyet, hogy a vidékiek is "
 "könnyen odataláljanak."
 
-#: app/templates/layout.html:32
+#: app/templates/layout.html:26
 msgid "contact_us"
 msgstr ""
 "Írj nekünk a <a href=\"mailto:team@pubstomp.hu\">team@pubstomp.hu</a> címre!"
