@@ -169,6 +169,22 @@ main
             font-size: golden-ratio($font_size, 1)
           overflow: hidden
 
+          .confirmation-message > *
+            display: none
+
+          .confirmation-message
+            &.no > .no, &.maybe > .maybe, &.yes > .yes
+              display: block
+            &.no > .change, &.maybe > .change, &.yes > .change
+              display: block
+              font-size: $font_size
+              line-height: $font_size * 2
+              cursor: pointer
+              &:hover
+                color: white
+            &.no + .buttons, &.maybe + .buttons, &.yes + .buttons
+              display: none
+
           .buttons
             transform: translateY(-10px)
 

@@ -41,6 +41,12 @@
                 <h2>{{ _('poll_title') }}</h2>
                 <p>{{ _('poll_description') }}</p>
                 <div class="interactive-area">
+                    <div class="confirmation-message {{ vote }}">
+                        <div class="yes">Thanks, see you there!</div>
+                        <div class="maybe">Thanks, we hope you'll be there!</div>
+                        <div class="no">Aww, well, we recorded your response.</div>
+                        <div class="change">(Changed your mind?)</div>
+                    </div>
                     <div class="buttons">
                         <button class="yes" value="yes">
                             <span class="short-answer">{{ _('poll_yes_title') }}</span><br>
@@ -54,11 +60,6 @@
                             <span class="short-answer">{{ _('poll_no_title') }}</span><br>
                             <span class="long-answer">{{ _('poll_no_description') }}</span>
                         </button>
-                    </div>
-                    <div class="confirmation-message">
-                        <div class="yes">Thanks, see you there!</div>
-                        <div class="maybe">Thanks, we hope you'll be there!</div>
-                        <div class="no">Aww, well, we recorded your response.</div>
                     </div>
                 </div>
             </section>

@@ -17,15 +17,19 @@ def get_locale():
 @app.route('/<locale>')
 def index_with_locale(locale=None):
     request.locale = locale
-    response = make_response(render_template('index.html'))
+    vote = None
+    if 'u' in request.cookies:
+        vote = redis.get(request.cookies['u'])
+    response = make_response(render_template('index.html', vote=vote))
     if 'u' not in request.cookies:
-        response.set_cookie('u', str(uuid4())[:13])
+        # Expiry time is a day after event
+        response.set_cookie('u', str(uuid4())[:13], expires=1406073600)
     return response
 
 
 @app.route('/poll', methods=['PUT'])
 def submit_poll_response():
-    if 'u' in request.cookies:
+    if 'u' in request.cookies and 'value' in request.form:
         redis.set(request.cookies['u'], request.form['value'])
         return '', 204
     else:
