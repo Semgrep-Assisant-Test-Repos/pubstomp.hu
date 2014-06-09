@@ -4,6 +4,7 @@
 *.css
 *.min.js
 bower_components
+*.rdb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
