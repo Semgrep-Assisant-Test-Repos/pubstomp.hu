@@ -34,3 +34,7 @@ def submit_poll_response():
         return '', 204
     else:
         return '', 400
+        
+@app.route('/mu-d9c8e740-a146b97f-6f1eb70d-3b407429')
+def verify_load_testing():
+    return '42'
