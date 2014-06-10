@@ -41,7 +41,7 @@ msgstr "Add meg az email címed"
 
 #: app/templates/index.html:19
 msgid "newsletter_description"
-msgstr "Iratkozz fel hírlevelünkre, hogy majd tudunk értesíteni a részletekről"
+msgstr "Iratkozz fel hírlevelünkre, hogy majd tudjunk értesíteni a részletekről"
 
 #: app/templates/index.html:26
 msgid "newsletter_placeholder"
