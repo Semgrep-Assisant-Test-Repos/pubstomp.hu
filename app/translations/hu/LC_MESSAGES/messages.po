@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-06-10 01:21+0200\n"
-"PO-Revision-Date: 2014-06-10 01:25+0100\n"
+"PO-Revision-Date: 2014-06-10 01:59+0100\n"
 "Last-Translator: Bence Nagy <bence@underyx.me>\n"
 "Language-Team: hu\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -41,7 +41,7 @@ msgstr "Add meg az email címed"
 
 #: app/templates/index.html:19
 msgid "newsletter_description"
-msgstr "Ha feliratkozol a hírlevelünkre, majd tudunk értesíteni a részletekről"
+msgstr "Iratkozz fel hírlevelünkre, hogy majd tudunk értesíteni a részletekről"
 
 #: app/templates/index.html:26
 msgid "newsletter_placeholder"
@@ -57,7 +57,8 @@ msgstr "Szólj, hogy eljössz-e"
 
 #: app/templates/index.html:42
 msgid "poll_description"
-msgstr "Mielőtt lefoglalunk egy helyet, szeretnénk tudni, hányan is leszünk"
+msgstr ""
+"Mielőtt lefoglalunk egy helyet, szeretnénk tudni, hogy hányan is leszünk"
 
 #: app/templates/index.html:45
 msgid "poll_response_yes"
@@ -110,10 +111,10 @@ msgstr "Mi az, hogy \"pubstomp\"?"
 #: app/templates/index.html:75
 msgid "whats_a_pubstomp_text"
 msgstr ""
-"Egy pubstomp gyakorlatilag egy olyan esemény, ahol Dota rajongók együtt "
-"nézik esport bajnokságok meccseit. Az ötlet 2011-ből származik, amikor "
-"Starcraft játékosok kezdtek el úgynevezett <a href=\"http://en.wikipedia.org/"
-"wiki/BarCraft\">Barcraftokat</a> szervezni&mdash;azóta pedig csak egyre "
+"A pubstomp gyakorlatilag egy olyan esemény, ahol Dota rajongók együtt nézik "
+"esport bajnokságok meccseit. Az ötlet 2011-ből származik, amikor Starcraft "
+"játékosok kezdtek el úgynevezett <a href=\"http://en.wikipedia.org/wiki/"
+"BarCraft\">Barcraftokat</a> szervezni&mdash;azóta pedig csak egyre "
 "népszerűbbé válnak ezek az összejövetelek, mint ahogy a bajnokságok hírneve "
 "is egyre csak nő."
 
@@ -127,7 +128,7 @@ msgstr ""
 "A pubstompok azoknak valók, akik nem tudnak a rendes bajnokságra kimenni, de "
 "mégis ugyanolyan atmoszférájú helyen és közösségben szeretnék végigizgulni a "
 "meccseket, mint élőben. Arról nem is beszélve, hogy rengeteg embert "
-"ismerhesz így meg, akiknek ugyanaz a hobbija, mint neked."
+"ismerhetsz így meg, akiknek ugyanaz a hobbija, mint neked."
 
 #: app/templates/index.html:79
 msgid "why_pubstomp_text_2"
@@ -162,24 +163,24 @@ msgstr "Részvétel"
 #: app/templates/index.html:87
 msgid "attend_text"
 msgstr ""
-"A Pubstomp.hu The International 2014-es összejövetelét Budapest szívében, "
-"fogjuk tartani, ha minden jól megy. Viszont mielőtt még lefoglalnánk egy "
-"helyet, pontosabb adatokra lenne szükségük arról, hogy hányan fognak "
-"eljönni. Néhány hely amire gondoltunk: a Prezi House of Ideas előadóterme, "
-"az Anker't, vagy a Füge Udvar (a lenti térképen megnézheted, ezek hol "
-"vannak.) Akárki eljöhet, és minden tőlünk telhetőt meg fogunk tenni, hogy a "
-"részvétel ingyenes legyen, de sajnos ezt még nem tudjuk garantálni. Szintén "
-"prioritásként kezeljük azt, hogy legyen a helyen étel, és ital."
+"Az összejövetelt Budapest szívében fogjuk tartani, ha minden jól megy. "
+"Viszont mielőtt még lefoglalnánk egy helyet, pontosabb adatokra lenne "
+"szükségük arról, hogy hányan fognak eljönni. Néhány hely amire gondoltunk: a "
+"Prezi House of Ideas előadóterme, az Anker't, vagy a Füge Udvar (a lenti "
+"térképen megnézheted, hogy ezek hol vannak.) Akárki eljöhet, és minden "
+"tőlünk telhetőt meg fogunk tenni, hogy a részvétel ingyenes legyen, de "
+"sajnos ezt még nem tudjuk garantálni. Szintén prioritásként kezeljük azt, "
+"hogy legyen a helyen étel és ital."
 
 #: app/templates/index.html:98
 msgid "travelling_title"
-msgstr "Vidékieknek"
+msgstr "Megközelítés"
 
 #: app/templates/index.html:99
 msgid "travelling_text"
 msgstr ""
-"Mikor már tudjuk, hogy hol lesz megrendezve az esemény, ide kiírjuk, hogy "
-"hogyan lehet legegyszerűbben megközelíteni a helyet, hogy a vidékiek is "
+"Amint kiderült, hogy hol lesz megrendezve az esemény, ide kiírjuk, hogy "
+"hogyan tudjátok legegyszerűbben megközelíteni a helyet, hogy a vidékiek is "
 "könnyen odataláljanak."
 
 #: app/templates/layout.html:26
