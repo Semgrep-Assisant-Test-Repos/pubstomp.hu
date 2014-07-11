@@ -1,0 +1,51 @@
+{% macro countdown_clock(target_datetime, id="main_countdown") %}
+    {% set hours, minutes, seconds = target_datetime|datetime_to_countdown %}
+    <div class="countdown" id="{{ id }}" data-target-timestamp="{{ target_datetime|datetime_to_timestamp }}">
+        <div class="hours">{{ "%02d"|format(hours) }}</div>
+        <div class="colon">:</div>
+        <div class="minutes">{{ "%02d"|format(minutes) }}</div>
+        <div class="colon">:</div>
+        <div class="seconds">{{ "%02d"|format(seconds) }}</div>
+    </div>
+{% endmacro %}
+
+{% macro countdown_javascript() %}
+    <script>
+        (function () {
+            function leftPad(number, targetLength) {
+                var output = number + '';
+                while (output.length < targetLength) {
+                    output = '0' + output;
+                }
+                return output;
+            }
+
+            $('.countdown').each(function (i, elem) {
+
+                var $elem = $(elem),
+                    target_time = new Date(parseInt($elem.attr('data-target-timestamp'), 10) * 1000),
+                    $hours = $elem.find('.hours'),
+                    $minutes = $elem.find('.minutes'),
+                    $seconds = $elem.find('.seconds'),
+                    SECOND = 1000,
+                    MINUTE = SECOND * 60,
+                    HOUR = MINUTE * 60,
+                    timer;
+
+                function render_countdown() {
+
+                    var now = new Date(),
+                        delta = target_time - now;
+
+                    if (delta < 0) clearInterval(timer);
+
+                    $hours.text(leftPad(Math.floor(delta / HOUR), 2));
+                    $minutes.text(leftPad(Math.floor((delta % HOUR) / MINUTE), 2));
+                    $seconds.text(leftPad(Math.floor((delta % MINUTE) / SECOND), 2));
+                }
+
+                timer = setInterval(render_countdown, SECOND);
+            });
+        })();
+    </script>
+{% endmacro %}

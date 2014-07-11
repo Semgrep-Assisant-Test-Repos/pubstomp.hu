@@ -1,0 +1,10 @@
+.countdown
+  color: $text_color
+  padding: 0.75em 0 0 0
+  font-size: golden-ratio($font_size, 3) // Reduce font size in banner on mobile
+
+  @include media($tablet)
+    font-size: golden-ratio($font_size, 4)
+
+  > div
+    display: inline-block

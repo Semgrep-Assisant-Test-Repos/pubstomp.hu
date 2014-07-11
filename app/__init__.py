@@ -28,3 +28,28 @@ babel = Babel(app)
 
 # Load stuff
 from app.views import *
+
+# Filters
+import time
+
+
+@app.template_filter()
+def timestamp_to_countdown(timestamp):
+    timedelta = timestamp - time.mktime(time.gmtime())
+
+    m, s = divmod(timedelta, 60)
+    h, m = divmod(m, 60)
+
+    return h, m, s
+
+
+@app.template_filter()
+def datetime_to_timestamp(dt):
+    return time.mktime(dt.timetuple())
+
+
+@app.template_filter()
+def datetime_to_countdown(dt):
+    return timestamp_to_countdown(
+        datetime_to_timestamp(dt)
+    )

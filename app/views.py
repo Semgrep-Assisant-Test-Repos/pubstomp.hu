@@ -1,8 +1,8 @@
+from datetime import datetime
 from uuid import uuid4
 
 from flask import render_template, request, make_response
 from app import app, babel, redis
-
 
 @babel.localeselector
 def get_locale():
@@ -20,10 +20,14 @@ def index_with_locale(locale=None):
     vote = None
     if 'u' in request.cookies:
         vote = redis.get(request.cookies['u'])
-    response = make_response(render_template('index.html', vote=vote))
+
+    countdown_target = datetime(day=12, month=7, year=2014, hour=10, minute=0, second=0)
+
+    response = make_response(render_template('index.html', vote=vote, countdown_to=countdown_target))
     if 'u' not in request.cookies:
         # Expiry time is a day after event
         response.set_cookie('u', str(uuid4())[:13], expires=1406073600)
+
     return response
 
 

@@ -1,4 +1,5 @@
 {% extends 'layout.html' %}
+{% from "macros/countdown.html" import countdown_clock, countdown_javascript %}
 
 {% block content %}
     <section class="initial">
@@ -13,6 +14,8 @@
                 <span class="date">{{ _('event_date') }}</span>,
                 <span class="location">{{ _('event_location') }}</span>
             </h2>
+
+            {{ countdown_clock(countdown_to) }}
         </section>
 
         <section class="heroes">
@@ -104,4 +107,9 @@
             </section>
         </article>
     </section>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    {{ countdown_javascript() }}
 {% endblock %}
