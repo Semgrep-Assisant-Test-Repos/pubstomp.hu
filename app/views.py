@@ -2,7 +2,8 @@ from datetime import datetime
 from uuid import uuid4
 
 from flask import render_template, request, make_response
-from app import app, babel, redis
+from app import app, babel
+
 
 @babel.localeselector
 def get_locale():
@@ -17,28 +18,9 @@ def get_locale():
 @app.route('/<locale>')
 def index_with_locale(locale=None):
     request.locale = locale
-    vote = None
-    if 'u' in request.cookies:
-        vote = redis.get(request.cookies['u'])
 
-    countdown_target = datetime(day=12, month=7, year=2014, hour=10, minute=0, second=0)
+    countdown_target = datetime(
+        day=12, month=7, year=2014, hour=10, minute=0, second=0
+    )
 
-    response = make_response(render_template('index.html', vote=vote, countdown_to=countdown_target))
-    if 'u' not in request.cookies:
-        # Expiry time is a day after event
-        response.set_cookie('u', str(uuid4())[:13], expires=1406073600)
-
-    return response
-
-
-@app.route('/poll', methods=['PUT'])
-def submit_poll_response():
-    if 'u' in request.cookies and 'value' in request.form:
-        redis.set(request.cookies['u'], request.form['value'])
-        return '', 204
-    else:
-        return '', 400
-        
-@app.route('/mu-d9c8e740-a146b97f-6f1eb70d-3b407429')
-def verify_load_testing():
-    return '42'
+    return render_template('index.html', countdown_to=countdown_target)

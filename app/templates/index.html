@@ -10,64 +10,27 @@
         </video>
         <section class="banner large ti3">
             <h1>{{ _('title_ti2014') }}<br>{{ _('subtitle_hun_pubstomp') }}</h1>
-            <h2>
-                <span class="date">{{ _('event_date') }}</span>,
-                <span class="location">{{ _('event_location') }}</span>
-            </h2>
-
-            {{ countdown_clock(countdown_to) }}
         </section>
 
         <section class="heroes">
-            <section class="newsletter">
-                <h2>{{ _('newsletter_title') }}</h2>
-                <p>{{ _('newsletter_description') }}</p>
+            <section class="bar">
+                <h2>{{ _('bar_title') }}</h2>
+                <p>{{ _('bar_description') }}</p>
 
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <form action="http://pubstomp.us8.list-manage1.com/subscribe/post?u=213ad8d5eccb315b953a5d448&amp;id=af97de488e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-                        <div class="mc-field-group">
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="{{ _('newsletter_placeholder') }}">
-                        </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_213ad8d5eccb315b953a5d448_af97de488e" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="{{ _('newsletter_button') }}" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                    </form>
+                <h3>{{ _('facebook_events') }}</h3>
+                <div class="buttons">
+                    <a href="https://www.facebook.com/events/560078790769586/"><button>{{ _('day_1') }}</button></a>
+                    <a href="https://www.facebook.com/events/667284120006053/"><button>{{ _('day_2') }}</button></a>
+                    <a href="https://www.facebook.com/events/652706488149843/"><button>{{ _('day_3') }}</button></a>
                 </div>
-                <!--End mc_embed_signup-->
-                <p>{{ _('facebook_promo') }}</p>
-                <div class="fb-like" data-href="https://facebook.com/pubstomp.hu" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-
             </section>
-            <section class="poll">
-                <h2>{{ _('poll_title') }}</h2>
-                <p>{{ _('poll_description') }}</p>
-                <div class="interactive-area">
-                    <div class="confirmation-message {{ vote }}">
-                        <div class="yes">{{ _('poll_response_yes') }}</div>
-                        <div class="maybe">{{ _('poll_response_maybe') }}</div>
-                        <div class="no">{{ _('poll_response_no') }}</div>
-                        <div class="change">{{ _('poll_response_change') }}</div>
-                    </div>
-                    <div class="buttons">
-                        <button class="yes" value="yes">
-                            <span class="short-answer">{{ _('poll_yes_title') }}</span><br>
-                            <span class="long-answer">{{ _('poll_yes_description') }}</span>
-                        </button>
-                        <button class="maybe" value="maybe">
-                            <span class="short-answer">{{ _('poll_maybe_title') }}</span><br>
-                            <span class="long-answer">{{ _('poll_maybe_description') }}</span>
-                        </button>
-                        <button class="no" value="no">
-                            <span class="short-answer">{{ _('poll_no_title') }}</span><br>
-                            <span class="long-answer">{{ _('poll_no_description') }}</span>
-                        </button>
-                    </div>
+            <section class="cinema">
+                <h2>{{ _('cinema_title') }}</h2>
+                <p>{{ _('cinema_description') }}</p>
+
+                <h3>{{ _('facebook_event') }}</h3>
+                <div class="buttons">
+                    <a href="https://www.facebook.com/events/651912081565009/"><button>{{ _('grand_finals') }}</button></a>
                 </div>
             </section>
         </section>
@@ -83,7 +46,6 @@
 
                 <h3>{{ _('why_pubstomp_title') }}</h3>
                 <p>{{ _('why_pubstomp_text_1') }}</p>
-                <p>{{ _('why_pubstomp_text_2') }}</p>
 
                 <h3>{{ _('whats_an_international_title') }}</h3>
                 <p>{{ _('whats_an_international_text') }}</p>

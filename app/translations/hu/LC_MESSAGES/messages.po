@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-06-11 01:15+0200\n"
-"PO-Revision-Date: 2014-06-11 01:16+0100\n"
+"POT-Creation-Date: 2014-07-12 11:29+0200\n"
+"PO-Revision-Date: 2014-07-12 11:38+0100\n"
 "Last-Translator: Bence Nagy <bence@underyx.me>\n"
 "Language-Team: hu\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -19,101 +19,67 @@ msgstr ""
 "Language: hu\n"
 "X-Generator: Poedit 1.6.5\n"
 
-#: app/templates/index.html:11
+#: app/templates/index.html:12
 msgid "title_ti2014"
 msgstr "The International 2014"
 
-#: app/templates/index.html:11
+#: app/templates/index.html:12
 msgid "subtitle_hun_pubstomp"
 msgstr "Magyar Pubstomp"
 
-#: app/templates/index.html:13
-msgid "event_date"
-msgstr "július 18 &ndash; 21"
+#: app/templates/index.html:17
+msgid "bar_title"
+msgstr "július 18-20. &ndash; Füge Udvar"
 
-#: app/templates/index.html:14
-msgid "event_location"
-msgstr "Budapest"
+#: app/templates/index.html:18
+msgid "bar_description"
+msgstr ""
+"A belépés ingyenes, inni amennyit csak akarsz, és a meccsek baromi jók "
+"lesznek!"
 
 #: app/templates/index.html:20
-msgid "newsletter_title"
-msgstr "Add meg az email címed"
+msgid "facebook_events"
+msgstr "Facebook események:"
 
-#: app/templates/index.html:21
-msgid "newsletter_description"
-msgstr ""
-"Iratkozz fel hírlevelünkre, hogy majd tudjunk értesíteni a részletekről"
+#: app/templates/index.html:22
+msgid "day_1"
+msgstr "1. nap"
+
+#: app/templates/index.html:23
+msgid "day_2"
+msgstr "2. nap"
+
+#: app/templates/index.html:24
+msgid "day_3"
+msgstr "3. nap"
 
 #: app/templates/index.html:28
-msgid "newsletter_placeholder"
-msgstr "Email cím"
+msgid "cinema_title"
+msgstr "július 21. &ndash; Lurdy Ház mozi"
 
-#: app/templates/index.html:36
-msgid "newsletter_button"
-msgstr "Feliratkozás"
-
-#: app/templates/index.html:40
-msgid "facebook_promo"
-msgstr "...vagy lájkolj minket Facebookon!"
-
-#: app/templates/index.html:45
-msgid "poll_title"
-msgstr "Szólj, hogy eljössz-e"
-
-#: app/templates/index.html:46
-msgid "poll_description"
+#: app/templates/index.html:29
+msgid "cinema_description"
 msgstr ""
-"Mielőtt lefoglalunk egy helyet, szeretnénk tudni, hogy hányan is leszünk"
+"Ide mindannyian befértek, a belépő csak 500 forint, a kivetítő meg ha-tal-"
+"mas!"
 
-#: app/templates/index.html:49
-msgid "poll_response_yes"
-msgstr "Oké, ott találkozunk!"
+#: app/templates/index.html:31
+msgid "facebook_event"
+msgstr "Facebook esemény:"
 
-#: app/templates/index.html:50
-msgid "poll_response_maybe"
-msgstr "Rendben, reméljük, ott leszel!"
+#: app/templates/index.html:33
+msgid "grand_finals"
+msgstr "A döntő"
 
-#: app/templates/index.html:51
-msgid "poll_response_no"
-msgstr "Kár, de azért köszi, hogy szavaztál :("
-
-#: app/templates/index.html:52
-msgid "poll_response_change"
-msgstr "(Meggondoltad magad?)"
-
-#: app/templates/index.html:56
-msgid "poll_yes_title"
-msgstr "Igen"
-
-#: app/templates/index.html:57
-msgid "poll_yes_description"
-msgstr "Mindenképp elmegyek"
-
-#: app/templates/index.html:60
-msgid "poll_maybe_title"
-msgstr "Talán"
-
-#: app/templates/index.html:61
-msgid "poll_maybe_description"
-msgstr "Még nem tudom, elmegyek-e"
-
-#: app/templates/index.html:64
-msgid "poll_no_title"
-msgstr "Nem"
-
-#: app/templates/index.html:65
-msgid "poll_no_description"
-msgstr "Biztos, hogy nem megyek el"
-
-#: app/templates/index.html:72
+#: app/templates/index.html:38
 msgid "details"
 msgstr "Részletek"
 
-#: app/templates/index.html:78
+#: app/templates/index.html:44
 msgid "whats_a_pubstomp_title"
 msgstr "Mi az, hogy \"pubstomp\"?"
 
-#: app/templates/index.html:79
+#: app/templates/index.html:45
 msgid "whats_a_pubstomp_text"
 msgstr ""
 "A pubstomp gyakorlatilag egy olyan esemény, ahol Dota rajongók együtt nézik "
@@ -123,11 +89,11 @@ msgstr ""
 "népszerűbbé válnak ezek az összejövetelek, mint ahogy a bajnokságok hírneve "
 "is egyre csak nő."
 
-#: app/templates/index.html:81
+#: app/templates/index.html:47
 msgid "why_pubstomp_title"
 msgstr "Miért menjek el a pubstompra?"
 
-#: app/templates/index.html:82
+#: app/templates/index.html:48
 msgid "why_pubstomp_text_1"
 msgstr ""
 "A pubstompok azoknak valók, akik nem tudnak a rendes bajnokságra kimenni, de "
@@ -135,20 +101,11 @@ msgstr ""
 "meccseket, mint élőben. Arról nem is beszélve, hogy rengeteg embert "
 "ismerhetsz így meg, akiknek ugyanaz a hobbija, mint neked."
 
-#: app/templates/index.html:83
-msgid "why_pubstomp_text_2"
-msgstr ""
-"Ha ez még nem elég: az ilyen eseményeket gyakran támogatják a játékfejlesztő "
-"cégek és kapcsolódó szervezetek kisebb-nagyobb ajándékokkal, amik aztán "
-"kiosztásra kerülnek a nézők között. Nem tudjuk persze még garantálni, hogy "
-"ez idén is így lesz, de mi mindenképp megpróbálunk majd valami módot találni "
-"rá, hogy minél több embert rávegyünk a részvételre."
-
-#: app/templates/index.html:85
+#: app/templates/index.html:50
 msgid "whats_an_international_title"
 msgstr "Mi az a \"The International\"?"
 
-#: app/templates/index.html:86
+#: app/templates/index.html:51
 msgid "whats_an_international_text"
 msgstr ""
 "Az <a href=\"http://www.dota2.com/international/announcement/"
@@ -161,34 +118,98 @@ msgstr ""
 "világ leginnovatívabb esport eseményének, ahol minden évben kitalálnak "
 "valami új módot az esport támogatására."
 
-#: app/templates/index.html:90
+#: app/templates/index.html:55
 msgid "attend_title"
 msgstr "Részvétel"
 
-#: app/templates/index.html:91
+#: app/templates/index.html:56
 msgid "attend_text"
 msgstr ""
-"Az összejövetelt Budapest szívében fogjuk tartani, ha minden jól megy. "
-"Viszont mielőtt még lefoglalnánk egy helyet, pontosabb adatokra lenne "
-"szükségük arról, hogy hányan fognak eljönni. Néhány hely amire gondoltunk: a "
-"Prezi House of Ideas előadóterme, az Anker't, vagy a Füge Udvar (a lenti "
-"térképen megnézheted, hogy ezek hol vannak.) Akárki eljöhet, és minden "
-"tőlünk telhetőt meg fogunk tenni, hogy a részvétel ingyenes legyen, de "
-"sajnos ezt még nem tudjuk garantálni. Szintén prioritásként kezeljük azt, "
-"hogy legyen a helyen étel és ital."
+"Az összejövetel első napjait Budapest szívében fogjuk tartani, a Füge Udvar "
+"nagyon könnyen megközelíthető, mivel a ott van pont a Blaha Lujza tér "
+"mellett. Mindenkit szívesen látunk, és egy az első három napon a részvétel "
+"is ingyenes. A Füge Udvarban megbízhattok, hogy minden ital és rágcsálnivaló "
+"iránti ígényeteket kielégítsék, és a Lurdy Ház mozijában is van egy büfé, "
+"viszont nyugodtan akármikor elhagyhatjátok a helyszínt, hogy aztán később "
+"visszatérjetek, ami különösen jól jön, hisz a Lurdy Ház egy pláza, tele "
+"mindenféle éttermekkel."
 
-#: app/templates/index.html:102
+#: app/templates/index.html:67
 msgid "travelling_title"
 msgstr "Megközelítés"
 
-#: app/templates/index.html:103
+#: app/templates/index.html:68
 msgid "travelling_text"
 msgstr ""
-"Amint kiderült, hogy hol lesz megrendezve az esemény, ide kiírjuk, hogy "
-"hogyan tudjátok legegyszerűbben megközelíteni a helyet, hogy a vidékiek is "
-"könnyen odataláljanak."
+"A Füge Udvar pont a városközpont mellett van, szóval nem okozhat majd nagy "
+"gondott a megtalálása. Három perc sétára van a Blaha Lujza tértől, ahol "
+"megáll a kettes metró, a 4-es, 6-os, 28-as, és 37-es villamos, valamit a "
+"következő buszjáratok: 5, 7, 7E, 8, 8A, 107, 112, 133, 178, 233, és "
+"239&mdash;na ugye, hogy nincs itt mitől félni?<br>A Lurdy Ház már kicsit "
+"távolabb van a városközponttól, de még így is kb. fél órán belül oda lehet "
+"érni. A 103-as busz pont a pláza előtt tesz le, amire pedig a Puskás Ferenc "
+"Stadion metróállomáson a kettes metróról át lehet szállni. Ha pedig nem okoz "
+"gondot neked egy 15 perces séta, leszállhatsz a hármas metróról a Nagyvárad "
+"térnél, és gyalog folytathatod onnan az utad."
 
-#: app/templates/layout.html:41
+#: app/templates/layout.html:43
 msgid "contact_us"
 msgstr ""
 "Írj nekünk a <a href=\"mailto:team@pubstomp.hu\">team@pubstomp.hu</a> címre!"
+
+#~ msgid "event_date"
+#~ msgstr "július 18 &ndash; 21"
+
+#~ msgid "event_location"
+#~ msgstr "Budapest"
+
+#~ msgid "newsletter_title"
+#~ msgstr "Add meg az email címed"
+
+#~ msgid "newsletter_placeholder"
+#~ msgstr "Email cím"
+
+#~ msgid "newsletter_button"
+#~ msgstr "Feliratkozás"
+
+#~ msgid "poll_title"
+#~ msgstr "Szólj, hogy eljössz-e"
+
+#~ msgid "poll_response_yes"
+#~ msgstr "Oké, ott találkozunk!"
+
+#~ msgid "poll_response_maybe"
+#~ msgstr "Rendben, reméljük, ott leszel!"
+
+#~ msgid "poll_response_no"
+#~ msgstr "Kár, de azért köszi, hogy szavaztál :("
+
+#~ msgid "poll_response_change"
+#~ msgstr "(Meggondoltad magad?)"
+
+#~ msgid "poll_yes_title"
+#~ msgstr "Igen"
+
+#~ msgid "poll_yes_description"
+#~ msgstr "Mindenképp elmegyek"
+
+#~ msgid "poll_maybe_title"
+#~ msgstr "Talán"
+
+#~ msgid "poll_maybe_description"
+#~ msgstr "Még nem tudom, elmegyek-e"
+
+#~ msgid "poll_no_title"
+#~ msgstr "Nem"
+
+#~ msgid "poll_no_description"
+#~ msgstr "Biztos, hogy nem megyek el"
+
+#~ msgid "why_pubstomp_text_2"
+#~ msgstr ""
+#~ "Ha ez még nem elég: az ilyen eseményeket gyakran támogatják a "
+#~ "játékfejlesztő cégek és kapcsolódó szervezetek kisebb-nagyobb "
+#~ "ajándékokkal, amik aztán kiosztásra kerülnek a nézők között. Nem tudjuk "
+#~ "persze még garantálni, hogy ez idén is így lesz, de mi mindenképp "
+#~ "megpróbálunk majd valami módot találni rá, hogy minél több embert "
+#~ "rávegyünk a részvételre."

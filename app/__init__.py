@@ -1,7 +1,6 @@
 import os
 
 from flask import Flask
-from flask_redis import Redis
 from flask.ext.babel import Babel
 
 # Init app
@@ -15,7 +14,6 @@ except ImportError:  # Assuming Heroku
             os.path.abspath(os.path.dirname(__file__)), os.pardir)),
         SECRET_KEY=os.urandom(24),
         DEBUG=bool(os.getenv('DEBUG')),
-        REDIS_URL=os.getenv('REDISCLOUD_URL'),
         GA_TRACKING_ID='UA-51296526-1',
         GA_DEFAULT_URL='pubstomp.hu',
         LOCALES={'en': 'English', 'hu': 'magyar'},
@@ -23,7 +21,6 @@ except ImportError:  # Assuming Heroku
     )
 
 # Init middleware
-redis = Redis(app)
 babel = Babel(app)
 
 # Load stuff
