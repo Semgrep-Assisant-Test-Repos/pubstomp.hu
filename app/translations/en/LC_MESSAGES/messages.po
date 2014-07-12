@@ -127,9 +127,9 @@ msgstr ""
 "Budapest. Füge Udvar is easily accessible, being located right next to Blaha "
 "Lujza tér. Anyone is welcome to attend, and attendance is free for the first "
 "three days. Füge Udvar can be trusted to satisfy all your needs for drinks "
-"and snacking, and the cinema in Lurdy Ház also has a cafeteria, but you're "
-"going to free to leave the venues and come back later any time, which is "
-"super convenient, considering how Lurdy Ház is a mall with a rather "
+"and snacking.  The cinema in Lurdy Ház has a cafeteria, but you're "
+"free to leave the cinema and come back later any time, which is "
+"super convenient as the Lurdy Ház mall has a rather "
 "comprehensive set of restaurants."
 
 #: app/templates/index.html:67
